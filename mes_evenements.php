@@ -71,5 +71,9 @@
     }
 ?>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="Script/index.js"></script>
+<script  src="jquery.js"></script>
+    <script  src="menu.js"></script>
 </body>
 </html>
