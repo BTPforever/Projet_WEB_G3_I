@@ -25,12 +25,12 @@ if (isset($_POST["prenom"]) && isset($_POST["nom"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil</title>
-    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
 <?php include("menu.php"); ?>
-<div id="profil">
+
 <main>
     <h1>Bonjour <?php echo isset($_COOKIE["prenom"]) ? $_COOKIE["prenom"] . " " . $_COOKIE["nom"] : ""; ?> !</h1>
 
@@ -105,15 +105,11 @@ if (isset($_POST["prenom"]) && isset($_POST["nom"])) {
             }
             if (!$found) echo "<p>Vous n'avez aucune réservation à venir.</p>";
         ?>
-        <a href="deconnexion.php"><button>se deco</button></a>
     </section>
 </main>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="Script/index.js"></script>
-<script  src="jquery.js"></script>
-    <script  src="menu.js"></script>
+<script src="script/index.js"></script>
 
 </body>
 </html>

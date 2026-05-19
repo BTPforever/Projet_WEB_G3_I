@@ -1,0 +1,209 @@
+body{
+    background-color : white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    max-width: 1200px;
+      margin: 0 auto;
+   
+}
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr  ;
+grid-template-areas:
+' section section section section section '
+' footer footer footer footer footer';
+width: 100%;
+
+     padding-top: 100px;
+    
+}
+.grid-item2{grid-area: section;}
+.grid-item3{grid-area: footer;}
+.grid-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1500spx;
+    z-index: 999;
+    background-color: #f5f5f7;
+}
+
+
+.couleurbeige{
+    background-color: #f5f5f7;
+}
+.text_center{
+    text-align: center;
+}
+.nav0:hover, .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover, .nav7:hover, .nav8:hover, .nav9:hover, .nav10:hover {
+    background: rgb(206, 236, 226);
+    color: white;
+}
+.nav0, .nav1, .nav2, .nav3, .nav4, .nav5, .nav7, .nav8, .nav9, .nav10{
+    flex: 1;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#nav {
+    position: fixed;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: visible;
+    cursor: pointer; 
+    left: 50%;
+    transform: translateX(-50%); 
+
+}
+footer {
+    position: fixed;
+    width: 1200px;
+    bottom: 0;
+    overflow: visible; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+
+}
+
+
+.grid-container3 {
+    display: grid;
+    grid-template-areas:
+    'co4'
+    'co1'
+    'co2'
+    'co3'
+    'co5'
+    'co0';
+    grid-template-columns: 1fr;  
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    max-width: 1200px;
+     padding-top: 100px;
+}
+
+.co0 { grid-area: co0; }
+.co1 { grid-area: co1; }
+.co2 { grid-area: co2; }
+.co3 { grid-area: co3; }
+.co4 { grid-area: co4; }
+.co5 { grid-area: co5; }
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: blue; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; 
+}
+.seco{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#sesouv{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+span{
+    color: blue;
+}
+#blue {
+    color: blue;
+}
+ #burgerr{
+        display: none;
+    }
+    .grid-container4 {
+   padding-top: 100px;
+   width: 400px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+ .grid-container5 {
+   padding-top: 100px;
+   width: 400px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+
+    
+/* Smalldevices(portrait tablets andlargephones, 600pxand up)*/
+@media only screen and (min-width: 600px) {
+    
+    }
+
+/* Mediumdevices(landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Largedevices(laptops/desktops,992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extralargedevices (largelaptops and desktops, 1200pxand up)*/
+@media only screen and (min-width: 1200px){
+     
+}
+
+@media only screen and (max-width: 600px) {
+   
+.burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 3px;
+}
+
+#burgerr{
+   position: absolute;
+    top: 10px;       
+    left: 10px;         
+    width: 50px;
+    background:peachpuff;
+    display: block;
+}
+}

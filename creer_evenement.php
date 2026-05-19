@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
@@ -17,12 +17,11 @@
         <div class="seco text_center">Créer votre événement</div>
      <input type="text" name="titre" placeholder="Titre de l'évènement">
     <input type="text" name="evenDescription" placeholder="Description de l'évènement">
-    <input type="text" name="lieu" placeholder="Adresse de l'évènement">
     <input type="date" name="evenDate" placeholder="Date de l'évènement">
-   <input type="file" name="image" accept="image/*" id="image" style="display:none">
-   <input type="number" name="capacite" placeholder="Capacité de l'évènement">
-<label for="image" id="faux-bouton">📁 Choisir une image</label>
-    <input type="submit" value="Créer l'évènement" id="creer">
+    <input type="text" name="lieu" placeholder="Adresse de l'évènement">
+    <input type="file" name="image" accept="image/webp">
+    <input type="number" name="capacite" placeholder="Capacité de l'évènement">
+    <input type="submit" value="Créer l'évènement">
     
 </form>
 
@@ -87,8 +86,6 @@
     }
 ?>
 </div>
-<script  src="jquery.js"></script>
-    <script  src="menu.js"></script>
 </body>
 
 </html>
