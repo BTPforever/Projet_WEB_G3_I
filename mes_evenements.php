@@ -1,5 +1,15 @@
 <?php include("connexion_BD.php"); ?>
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes événements</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
 <?php include("menu.php"); ?>
 <br>
 <br>
@@ -61,3 +71,5 @@
     }
 ?>
 </div>
+</body>
+</html>

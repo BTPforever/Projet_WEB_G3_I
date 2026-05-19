@@ -12,10 +12,11 @@
 <body>
 
 <?php include("menu.php"); ?>
-
+<div class="ev">
 <main>
-<div style="padding-top:100px">
-    <h1>Événements</h1>
+
+<div style="padding-top:100px ">
+    <h1 class="text_center" >Événements</h1>
     <div class="recherche-container">
 
         <input 
@@ -48,13 +49,13 @@
         </button>
 
     </section>
-
+</div>
 </main>
-
+<script src="jquery.js"></script>
+<script src="menu.js"></script>
 <script src="Script/block_cascade.js"></script>
 
-<script  src="jquery.js"></script>
-    <script  src="menu.js"></script>
+
 </div>
 </body>
 </html>

@@ -8,6 +8,10 @@ body{
       margin: 0 auto;
    
 }
+.ev{
+     width: 700px;
+     margin: 0 auto;
+}
 .grid-container {
 display: grid;
 grid-template-columns: 1fr 1fr  ;

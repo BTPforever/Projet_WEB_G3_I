@@ -105,6 +105,7 @@ if (isset($_POST["prenom"]) && isset($_POST["nom"])) {
             }
             if (!$found) echo "<p>Vous n'avez aucune réservation à venir.</p>";
         ?>
+        <a href="deconnexion.php"><button>se deconnecter</button></a>
     </section>
 </main>
 </div>
