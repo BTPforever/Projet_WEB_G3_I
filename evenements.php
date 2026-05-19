@@ -14,7 +14,7 @@
 <?php include("menu.php"); ?>
 
 <main>
-
+<div style="padding-top:100px">
     <h1>Événements</h1>
     <div class="recherche-container">
 
@@ -51,11 +51,10 @@
 
 </main>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="Script/block_cascade.js"></script>
 
-<script src="script/block_cascade.js"></script>
-
-<script src="script/recherche.js"></script>
-
+<script  src="jquery.js"></script>
+    <script  src="menu.js"></script>
+</div>
 </body>
 </html>

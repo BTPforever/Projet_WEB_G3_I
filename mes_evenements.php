@@ -3,7 +3,7 @@
 <?php include("menu.php"); ?>
 <br>
 <br>
-
+<div style="padding-top:100px">
 <?php
     echo "Bienvenue sur le page de gesiton de vos événements " . $_COOKIE["prenom"] . " " . $_COOKIE["nom"] . " !<br>";
     echo "<br>";
@@ -60,3 +60,4 @@
         }
     }
 ?>
+</div>

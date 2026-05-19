@@ -14,9 +14,9 @@
  <div class="grid-container" >
     
 <main class="grid-item2">
-    <h1>Liste des événements</h1>
-    <h2>Événements à venir</h2>
-
+    <h1 id="logo" class="text_center">Omnesevent</h1>
+    <h2 id="t">Trouver votre prochain évenement !</h2>
+    <div class="listescroll">
     <?php
         if (isset($_POST["inscription"])){
             $requeteVerif = $bdd->prepare("SELECT * FROM Reservations WHERE (nomUtilUser = ? AND titreEven = ?)");
@@ -34,7 +34,7 @@
             $placesRestantes = $reponseEven["capacite"] - $reponseEven["nbReservations"];
     ?>
         <form method="POST">
-            <article>
+            <article id="liste">
                 <h3><?php echo $reponseEven["titre"]; ?></h3>
                 <p><?php echo $reponseEven["evenDate"]; ?></p>
                 <p><?php echo $reponseEven["lieu"]; ?></p>
@@ -53,8 +53,9 @@
 </main>
 
 <?php include("footer.php"); ?>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="script/index.js"></script>
+ <script  src="jquery.js"></script>
+    <script  src="menu.js"></script>
+
 </div>
 </body>
 

@@ -62,7 +62,8 @@
 
     </div>
 </form>
-
+<script  src="jquery.js"></script>
+    <script  src="menu.js"></script>
 </body>
 </html>
 <?php

@@ -1,9 +1,10 @@
 body{
-    background-color : white;
+    background-color : #F0F4F8; 
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     max-width: 100%;
-    max-width: 1200px;
+    max-width: 1800px;
+     
       margin: 0 auto;
    
 }
@@ -18,6 +19,9 @@ width: 100%;
      padding-top: 100px;
     
 }
+#t{
+    color: #0D1B2A ;
+}
 .grid-item2{grid-area: section;}
 .grid-item3{grid-area: footer;}
 .grid-container2 {
@@ -27,26 +31,33 @@ width: 100%;
     align-items: center;
     position: fixed;
     top: 0;
-    left: 50%;
+    left:0%;
     transform: translateX(-50%);
-    width: 1500spx;
+    width: 1700px;
     z-index: 999;
-    background-color: #f5f5f7;
+    
 }
-
-
+#logo{
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+#profil{
+    padding-top: 100px;
+    max-width: 700px;
+    margin: 0 auto;
+}
 .couleurbeige{
-    background-color: #f5f5f7;
+    background-color: #0D1B2A;
 }
 .text_center{
     text-align: center;
 }
-.nav0:hover, .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover, .nav7:hover, .nav8:hover, .nav9:hover, .nav10:hover {
-    background: rgb(206, 236, 226);
+.nav0:hover, .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover, .nav7:hover, .nav8:hover {
+    background: #1B4F72;
     color: white;
 }
-.nav0, .nav1, .nav2, .nav3, .nav4, .nav5, .nav7, .nav8, .nav9, .nav10{
-    flex: 1;
+.nav0, .nav1, .nav2, .nav3, .nav4, .nav5, .nav7, .nav8{
+    flex: 0.5;
     text-align: center;
     padding: 3px;
     cursor: pointer;
@@ -57,7 +68,7 @@ a {
 }
 #nav {
     position: fixed;
-    width: 1200px;
+    width: 1700px;
     margin: 0 auto;
     overflow: visible;
     cursor: pointer; 
@@ -111,22 +122,93 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    border-color: blue; 
+    border-color:#2E86AB; 
 }
 
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: blue;
+    background-color:#2E86AB;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
 }
+input[type="date"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;
+    color: #0D1B2A;
+}
 
+input[type="date"]:focus {
+    border-color: #2E86AB;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+   
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    border-color: #2E86AB;
+}
+#faux-bouton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #7e9ca8;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+#creer{
+    margin-top: 50px;
+}
+#faux-bouton:hover {
+    background-color: #1B4F72;
+}
+#mondiv {
+    position:fixed;
+    top: 0px;       
+    left: 0px;         
+    width: 100vw;
+    background:#0D1B2A;
+    display: none;
+}
+button{
+     width: 100%;
+    padding: 10px;
+    background-color: #2E86AB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
 input[type="submit"]:hover {
-    background-color: darkblue; 
+    background-color:#2E86AB 
 }
 .seco{
     font-size: 30px;
@@ -158,8 +240,34 @@ span{
     margin-top: 20vh;
 }
 
-
+.listescroll {
+    display: flex;          /* ← flex pas block */
+    flex-direction: row;    /* ← côte à côte */
+    gap: 10px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    background-color:  #f5f5f7;
+    border-radius: 8px;
+    padding: 10px;
     
+}
+.blanc{
+    color: white;
+}
+.listescroll::-webkit-scrollbar {
+    display: none;
+}
+article#liste {
+    min-width: 400px;       /* ← largeur fixe de chaque carte */
+    min-height: 500px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    flex-shrink: 0;         /* ← empêche les cartes de rétrécir */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #A8DADC;
+}
 /* Smalldevices(portrait tablets andlargephones, 600pxand up)*/
 @media only screen and (min-width: 600px) {
     
@@ -179,15 +287,19 @@ span{
 }
 
 @media only screen and (max-width: 600px) {
+    h2{
+        text-align: center;
+    }
    
 .burger {
-    background: none;
+    background: none !important; /* ← ça écrase tout */
     border: none;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 5px;
+    
 }
 
 .burger span {
@@ -198,12 +310,34 @@ span{
     border-radius: 3px;
 }
 
-#burgerr{
-   position: absolute;
+.burger.active span {
+     background: white;
+}
+#burgerr {
+    position: fixed;
     top: 10px;       
     left: 10px;         
     width: 50px;
-    background:peachpuff;
+    background-color: #F0F4F8 !important; /* même couleur que le body */
     display: block;
+    z-index: 1001;
+    transition: background-color 0.3s;
+}
+
+#burgerr.active {
+    background-color: #0D1B2A !important;
+}
+#nav{
+    display: none;
+}
+article#liste {
+    min-width: 200px;       /* ← largeur fixe de chaque carte */
+    min-height: 300px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    flex-shrink: 0;         /* ← empêche les cartes de rétrécir */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #A8DADC;
 }
 }

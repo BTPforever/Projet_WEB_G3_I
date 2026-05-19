@@ -11,7 +11,7 @@
 <body>
 
 <?php include("menu.php"); ?>
-
+<div style="padding-top:100px">
 <main>
     <h1>Mes Billets</h1>
 
@@ -44,7 +44,7 @@
         ?>
     </section>
 </main>
-
+</div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script/index.js"></script>
 
